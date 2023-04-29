@@ -58,7 +58,7 @@ app.post("/api/paymentverification", (req, res) => {
 
         if (isAuthentic) {
           res.redirect(
-                `http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`
+                `https://shop-gules-five.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`
             );
         } else {
             res.status(400).json({
